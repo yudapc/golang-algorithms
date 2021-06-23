@@ -1,5 +1,5 @@
 module golang-algorithms
 
-go 1.15
+go 1.16
 
-require github.com/beevik/etree v1.1.0
+require github.com/beevik/etree v1.1.0 // indirect
