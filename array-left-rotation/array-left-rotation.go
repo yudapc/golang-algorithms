@@ -19,3 +19,10 @@ func ArrayLeftRotation(a []int32, d int32) []int32 {
 
 	return append(arr2, arr1...)
 }
+
+func ArrayLeftRotationSimple(a []int32, d int32) []int32 {
+	totalLen := len(a)
+	first := a[:d]
+	last := a[d:totalLen]
+	return append(last, first...)
+}
