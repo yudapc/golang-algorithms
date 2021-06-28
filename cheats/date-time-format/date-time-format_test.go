@@ -19,3 +19,11 @@ func TestDateTimeFormat(t *testing.T) {
 		t.Error("your date time format is wrong", dateFormated)
 	}
 }
+
+func TestDateTimeFormatISO8601(t *testing.T) {
+	date := "2021-06-02T15:04:05+0700"
+	dateFormated := DateTimeFormatISO8601(date)
+	if dateFormated != "02/06/2021 15:04 WIB" {
+		t.Error("your date time format ISO8601 is wrong", dateFormated)
+	}
+}
