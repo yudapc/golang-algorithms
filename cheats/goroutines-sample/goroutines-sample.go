@@ -1,5 +1,7 @@
 package goroutinessample
 
+import "fmt"
+
 func SampleGoroutines() chan string {
 	// Channel
 	ch := make(chan string)
@@ -19,6 +21,11 @@ func SampleGoroutines() chan string {
 }
 
 func push(name string, ch chan string) {
-	msg := "Hey, " + name
+	msg := "Hey " + name
 	ch <- msg
+}
+
+/// Sample 2
+func RunHelloWorld() {
+	fmt.Println("Hello World")
 }
