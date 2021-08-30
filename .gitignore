@@ -1,2 +1,3 @@
 generate-xml/*.xml
 cheats/gopgtesting/.env
+cheats/connect-redis/.env
